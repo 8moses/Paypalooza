@@ -133,4 +133,70 @@ h4{
 h2{
     color: white;
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    position: absolute;
+    left: 20%;
+    top: 0%;
 }
+
+
+#background{
+    background-color: #07071f;
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top:100%;
+
+}
+
+#text1{
+    color: white;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    left: 10%;
+    top: 120%;
+}
+
+#line2{
+    background-color:white;
+    width: 500px;
+    height: 6px;
+    position: absolute;
+    top:132%;
+    left: 5%;
+    border-radius: 10px;
+}
+
+#text2{
+    color: white;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 10%;
+    top: 140%;
+}
+
+#loginbtn1{
+    background-color:#07071f;
+    width: 280px;
+    height: 60px;
+    border-radius: 20px;
+    position: absolute;
+    top: 160%;
+    left:12% ;
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+#text3{
+    color: white;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    font-size: 40px;
+}
+
+
+
+
