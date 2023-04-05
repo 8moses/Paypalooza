@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,40 +8,6 @@
     <link href="https://fonts.cdnfonts.com/css/berlin-sans-fb-demi" rel="stylesheet">
     <title>Document</title>
 </head>
-
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "paypalooza";
-
-// maak connectie
-$connection = new mysqli($servername, $username, $password, $database);
-
-if ($connection->connect_error) {
-  die("Connection failed: " . $connection->connect_error);
-}
-
-// Lees elke regel van de database tabel.
-$sq1 = "SELECT * FROM users";
-$result = $connection->query($sq1);
-
-//controleer de connectie
-if (!$result) {
-die("invalid: " . $connection->error);
-}
-while ($row = $result->fetch_assoc()){
-  echo "<tr>
-  <td>" .$row["id"] . "</td>
-  <td>" .$row["username"] . "</td>
-  <td>" .$row["password"] . "</td>
-  <td>" .$row["sign up"] . "</td>
-
-  </tr>";
-
-}
-?>
-
 <body>
 <style>
 @import url('https://fonts.cdnfonts.com/css/berlin-sans-fb-demi');
@@ -58,7 +22,7 @@ while ($row = $result->fetch_assoc()){
                 <li><a href="">Wallet</a></li>
                 <label class="logo">Paypalooza</label>
                 <li><a href="">Log in</a></li>
-                <a href="" class="btn">Sign up</a>
+                <a href="#signup" class="btn">Sign up</a>
         </ul>
      </nav>   
      
@@ -86,44 +50,61 @@ while ($row = $result->fetch_assoc()){
     <!-- einde beginscherm -->
 
      <!-- Start Signup scherm -->
-    <div id="background"></div>
+    <div id="background"><div id="signup"></div></div>
+  
     <div id="text1">Welcome back!</div>
     <div id="line2"></div>
     <div id="text2">To keep connected with us please login <br> with your personal info. </div>
     <div id ="loginbtn1">
         <div id="text3">Log in</div>
     </div>
+  
     <form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+  
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="uname"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="uname" required>
+
+    <label for="email"><b>E-mail</b></label>
+    <input type="text" placeholder="Enter E-mail" name="email" required>
+
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+    <label for="iBan"><b>IBAN</b></label>
+    <input type="text" placeholder="IBAN" name="day" required>
+<br>
+    <label for="Age"><b>Age</b></label>
+    <input type="text" placeholder="Age" name="age" required><br>
+    
+    
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">passwordd?</a></span>
-  </div>
+ 
+
+<div id="signup3">
+  <div id="text4">Sign up!</div>
+  <div id="background2"></div>
+  
+</div>
 </form>
 
+<form1 action="action_page.php" method="post">
+  
 
-    
-    
+  <div class="container2">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Full Name" name="uname" required>
  
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
  
-
-
+</div>
+<div class="pageloginbtn">
+  <main>Log in</main>
+</div>
 
 </body> 
 </html>

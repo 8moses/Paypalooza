@@ -15,6 +15,7 @@ nav{
     width: 100%;
     position: absolute;
     left: 0%;
+ 
 }
 
 nav ul{
@@ -35,6 +36,7 @@ nav ul li a{
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-underline-offset: 100%;
+    
 }         
 
 .btn{
@@ -197,6 +199,94 @@ h2{
     font-size: 40px;
 }
 
+/* Bordered form */
+form{
+    top: 120%;
+    left: 60%;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 400px;
+    border-radius: 10px;
+    color: #0d0c31;
 
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+  }
 
+#signup3{
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 110%;
+    left: 10%;
+    border-radius: 20px;
+    border:2px solid  #07071f;
+}
 
+#text4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #07071f;
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    cursor:grab;
+}
+html{
+    scroll-behavior: smooth;
+}
+#background2{
+    background-color: #07071f;
+    width: 870px;
+    height: 800px;
+    position: absolute;
+    top:420%;
+    left: -95%;
+}
+
+form1{
+    top: 200%;
+    left: 10%;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 400px;
+    border-radius: 10px;
+    color: white;
+
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+.pageloginbtn{
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 120%;
+    left: 10%;
+    border:2px solid  #07071f;
+    border-radius: 30px;
+
+}
+main{
+    color: #07071f;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    font-size: 30px;
+}
