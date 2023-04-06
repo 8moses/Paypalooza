@@ -290,3 +290,46 @@ main{
     left: 35%;
     font-size: 30px;
 }
+#line3{
+    background-color:#07071f;
+    width: 500px;
+    height: 6px;
+    position: absolute;
+    top:70%;
+    left: -225%;
+    border-radius: 10px;
+}
+
+#text4{
+    color:#07071f;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    left: -200%;
+    top: 20%;
+}
+#text5{
+    color:#07071f;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: -200%;
+    top: 100%;
+}
+#signupbtn1{
+    background-color:white;
+    width: 280px;
+    height: 60px;
+    border-radius: 20px;
+    position: absolute;
+    top: 190%;
+    left:-200%;
+    border: 2px solid #07071f;
+}
+h6{
+    font-size: 30px;
+    color: #07071f;
+    position: absolute;
+    top:-110%;
+    left:30% ;
+}

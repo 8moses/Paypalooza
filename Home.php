@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,7 @@
                 <li><a href="">Transaction</a></li>
                 <li><a href="">Wallet</a></li>
                 <label class="logo">Paypalooza</label>
-                <li><a href="">Log in</a></li>
+                <li><a href="#signupbtn1">Log in</a></li>
                 <a href="#signup" class="btn">Sign up</a>
         </ul>
      </nav>   
@@ -45,8 +47,8 @@
           services online, sending money to friends and family, or<br>
            receiving payments for your business, we've got you covered. </h4>
 
-    <div id="signupbtn"><h2>Sign up</h2></div>
-    <div id="loginbtn"><h2>Log in</h2></div>
+           <div id="signupbtn"><h2>Sign up</h2></div>
+           <div id="loginbtn"><h2>Log in</h2></div>
     <!-- einde beginscherm -->
 
      <!-- Start Signup scherm -->
@@ -55,7 +57,7 @@
     <div id="text1">Welcome back!</div>
     <div id="line2"></div>
     <div id="text2">To keep connected with us please login <br> with your personal info. </div>
-    <div id ="loginbtn1">
+    <div id ="loginbtn1"><a href="#signupbtn1"></a>
         <div id="text3">Log in</div>
     </div>
   
@@ -106,5 +108,46 @@
   <main>Log in</main>
 </div>
 
+
+<div id="text4">Hello friend!</div>
+
+    <div id="line3"></div>
+    <div id="text5">Enter your details and <br>start a new journey with us </div>
+    <div id ="signupbtn1"><a href="#signup">
+      <h6>Sign up!</h6>
+    </div>
+
+    <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "paypalooza";
+
+// maak connectie
+$connection = new mysqli($servername, $username, $password, $database);
+
+if ($connection->connect_error) {
+  die("Connection failed: " . $connection->connect_error);
+}
+
+// Lees elke regel van de database tabel.
+$sq1 = "SELECT * FROM users";
+$result = $connection->query($sq1);
+
+//controleer de connectie
+if (!$result) {
+die("invalid: " . $connection->error);
+}
+while ($row = $result->fetch_assoc()){
+  echo "<tr>
+  <td>" .$row["id"] . "</td>
+  <td>" .$row["username"] . "</td>
+  <td>" .$row["password"] . "</td>
+  <td>" .$row["sign up"] . "</td>
+
+  </tr>";
+
+}
+?>
 </body> 
 </html>
